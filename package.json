@@ -13,8 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "pug": "^3.0.3",
-    "pug-cli": "^1.0.0-alpha6",
-    "serve": "^14.2.4"
+    "pug-cli": "^1.0.0-alpha6"
   },
   "devDependencies": {
     "gh-pages": "^6.2.0"
