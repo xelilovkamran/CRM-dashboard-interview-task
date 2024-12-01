@@ -50,6 +50,7 @@ function renderPagination(tableData) {
   const totalPages = Math.ceil(tableData.length / rowsPerPage);
 
   const prevButton = document.createElement("button");
+  prevButton.setAttribute("aria-label", "Previous page");
   prevButton.className = "pagination__btn pagination__btn--prev";
   prevButton.innerHTML = `<i class="fa-solid fa-chevron-left"></i>`;
   prevButton.onclick = () => {
@@ -61,6 +62,7 @@ function renderPagination(tableData) {
   };
 
   const nextButton = document.createElement("button");
+  nextButton.setAttribute("aria-label", "Next page");
   nextButton.className = "pagination__btn pagination__btn--next";
   nextButton.innerHTML = `<i class="fa-solid fa-chevron-right"></i>`;
   nextButton.onclick = () => {
