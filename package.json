@@ -1,0 +1,17 @@
+{
+  "name": "dashboard-task---pug",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "pug ./src/pug --pretty --out ./dist",
+    "watch": "pug --watch --pretty --out ./dist ./src/pug"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pug": "^3.0.3",
+    "pug-cli": "^1.0.0-alpha6"
+  }
+}

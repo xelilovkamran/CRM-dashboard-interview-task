@@ -1,0 +1,89 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Dashboard
+    link(rel="stylesheet" href="/src/css/style.css")
+    script(src="https://kit.fontawesome.com/55a3fd6aba.js" crossorigin="anonymous")
+  body
+    .dashboard
+      // Sidebar
+      aside.dashboard__sidebar
+        div
+          .sidebar__header
+            img.sidebar__logo-image(src="/src/assets/images/logo.png", alt="Dashboard Logo", width="37", height="37")
+            h1.sidebar__logo-text
+              | Dashboard
+              span.sidebar__version v.01
+          nav.sidebar__nav
+            ul.nav__list
+              li.nav__item
+                a.nav__link(href="#")
+                  div
+                    img(src="/src/assets/icons/key-icon.svg", alt="key icon")
+                    | Dashboard
+              li.nav__item
+                a.nav__link(href="#")
+                  div
+                    img(src="/src/assets/icons/cube-icon.svg", alt="3d cube icon")
+                    | Product
+                  i.fa-solid.fa-chevron-right.fa-sm
+              li.nav__item.nav__item--active
+                a.nav__link(href="#")
+                  div
+                    img(src="/src/assets/icons/user-icon.svg", alt="user icon")
+                    | Customers
+                  i.fa-solid.fa-chevron-right.fa-sm
+              li.nav__item
+                a.nav__link(href="#")
+                  div
+                    img(src="/src/assets/icons/wallet-icon.svg", alt="wallet icon")
+                    | Income
+                  i.fa-solid.fa-chevron-right.fa-sm
+              li.nav__item
+                a.nav__link(href="#")
+                  div
+                    img(src="/src/assets/icons/discount-icon.svg", alt="discount icon")
+                    | Promote
+                  i.fa-solid.fa-chevron-right.fa-sm
+              li.nav__item
+                a.nav__link(href="#")
+                  div
+                    img(src="/src/assets/icons/help-icon.svg", alt="help icon")
+                    | Help
+                  i.fa-solid.fa-chevron-right.fa-sm
+        .sidebar__profile
+          img.profile__image(src="/src/assets/images/profile.png", alt="Profile Picture")
+          .profile__info
+            p.profile__name Evano
+            p.profile__role Project Manager
+
+      // Main Content
+      main.dashboard__main
+        header.main__header
+          h2.header__title Hello Evano 👋🏼,
+        section.main__content
+          .content__header
+            .content__header-left
+              h3.content__title All Customers
+              p.content__subtitle Active Members
+            .content__header-right
+              i.search__icon.fa-solid.fa-magnifying-glass
+              input.search__input(type="text", id="search", placeholder="Search")
+          .table-wrapper
+            table.content__table
+              thead
+                tr
+                  th Customer Name
+                  th Company
+                  th Phone Number
+                  th Email
+                  th Country
+                  th Status
+              tbody
+          .content__pagination
+            p.pagination__text#pagination__info
+            .pagination__buttons#pagination
+
+    script(src="/src/js/app.js")
