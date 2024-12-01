@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <meta name="description" content="Dashboard for managing customers">
+    <script src="https://kit.fontawesome.com/55a3fd6aba.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="dashboard">
+      <!-- Sidebar-->
+      <aside class="dashboard__sidebar">
+        <div>
+          <div class="sidebar__header"><img class="sidebar__logo-image" src="/src/assets/images/logo.png" alt="Dashboard Logo" width="37" height="37">
+            <h1 class="sidebar__logo-text">Dashboard<span class="sidebar__version">v.01</span></h1>
+          </div>
+          <nav class="sidebar__nav">
+            <ul class="nav__list">
+              <li class="nav__item"><a class="nav__link" href="#">
+                  <div><img src="/src/assets/icons/key-icon.svg" alt="key icon">Dashboard</div></a></li>
+              <li class="nav__item"><a class="nav__link" href="#">
+                  <div><img src="/src/assets/icons/cube-icon.svg" alt="3d cube icon">Product</div><i class="fa-solid fa-chevron-right fa-sm"></i></a></li>
+              <li class="nav__item nav__item--active"><a class="nav__link" href="#">
+                  <div><img src="/src/assets/icons/user-icon.svg" alt="user icon">Customers</div><i class="fa-solid fa-chevron-right fa-sm"></i></a></li>
+              <li class="nav__item"><a class="nav__link" href="#">
+                  <div><img src="/src/assets/icons/wallet-icon.svg" alt="wallet icon">Income</div><i class="fa-solid fa-chevron-right fa-sm"></i></a></li>
+              <li class="nav__item"><a class="nav__link" href="#">
+                  <div><img src="/src/assets/icons/discount-icon.svg" alt="discount icon">Promote</div><i class="fa-solid fa-chevron-right fa-sm"></i></a></li>
+              <li class="nav__item"><a class="nav__link" href="#">
+                  <div><img src="/src/assets/icons/help-icon.svg" alt="help icon">Help</div><i class="fa-solid fa-chevron-right fa-sm"></i></a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="sidebar__profile"><img class="profile__image" src="/src/assets/images/profile.png" alt="Profile Picture">
+          <div class="profile__info">
+            <p class="profile__name">Evano</p>
+            <p class="profile__role">Project Manager</p>
+          </div>
+        </div>
+      </aside>
+      <!-- Main Content-->
+      <main class="dashboard__main">
+        <header class="main__header">
+          <h2 class="header__title">Hello Evano 👋🏼,</h2>
+        </header>
+        <section class="main__content">
+          <div class="content__header">
+            <div class="content__header-left">
+              <h3 class="content__title">All Customers</h3>
+              <p class="content__subtitle">Active Members</p>
+            </div>
+            <div class="content__header-right"><i class="search__icon fa-solid fa-magnifying-glass"></i>
+              <input class="search__input" type="text" id="search" placeholder="Search">
+            </div>
+          </div>
+          <div class="table-wrapper">
+            <table class="content__table">
+              <thead>
+                <tr>
+                  <th>Customer Name</th>
+                  <th>Company</th>
+                  <th>Phone Number</th>
+                  <th>Email</th>
+                  <th>Country</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+          <div class="content__pagination">
+            <p class="pagination__text" id="pagination__info"></p>
+            <div class="pagination__buttons" id="pagination"></div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="/src/js/app.js"></script>
+  </body>
+</html>
