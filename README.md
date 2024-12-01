@@ -22,6 +22,7 @@ This project is a simple dashboard interface with a sidebar, main content area, 
 
 ## Project Structure
 
+```
 /project-root
 ├── dist/ # Compiled HTML output
 ├── src/ # Source files
@@ -34,6 +35,7 @@ This project is a simple dashboard interface with a sidebar, main content area, 
 ├── package.json
 ├── node_modules/
 └── README.md
+```
 
 ---
 
