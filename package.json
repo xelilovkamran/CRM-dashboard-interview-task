@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "pug ./src/pug --pretty --out ./dist",
-    "watch": "pug --watch --pretty --out ./dist ./src/pug"
+    "build": "pug ./src/views --pretty --out ./dist",
+    "watch": "pug --watch --pretty --out ./dist ./src/views"
   },
   "keywords": [],
   "author": "",
